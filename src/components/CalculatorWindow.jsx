@@ -12,7 +12,7 @@ const Container = styled.div`
 const CalculatorWindow = props => {
   return (
     <div>
-      <Container>{props.nextValue ? props.nextValue : props.value}</Container>
+      <Container>{props.value ? props.value : props.total}</Container>
     </div>
   );
 };

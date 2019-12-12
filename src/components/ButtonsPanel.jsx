@@ -25,7 +25,11 @@ const ButtonsPanel = props => {
           buttonType="clear"
         />
         <Button name="TO DISCUSS" handleChange={props.handleChange} />
-        <Button name="/" />
+        <Button
+          name="/"
+          handleChange={props.handleChange}
+          buttonType="calculation"
+        />
       </PanelRow>
       <PanelRow>
         <Button
@@ -43,7 +47,11 @@ const ButtonsPanel = props => {
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button name="x" />
+        <Button
+          name="*"
+          handleChange={props.handleChange}
+          buttonType="calculation"
+        />
       </PanelRow>
       <PanelRow>
         <Button
@@ -61,7 +69,11 @@ const ButtonsPanel = props => {
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button name="-" />
+        <Button
+          name="-"
+          handleChange={props.handleChange}
+          buttonType="calculation"
+        />
       </PanelRow>
       <PanelRow>
         <Button
@@ -79,7 +91,11 @@ const ButtonsPanel = props => {
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button name="+" handleChange={props.handleChange} buttonType="sum" />
+        <Button
+          name="+"
+          handleChange={props.handleChange}
+          buttonType="calculation"
+        />
       </PanelRow>
       <PanelRow>
         <Button
@@ -93,7 +109,11 @@ const ButtonsPanel = props => {
           buttonType="numeric"
         />
         <Button name="." />
-        <Button name="=" />
+        <Button
+          name="="
+          handleChange={props.handleChange}
+          buttonType="result"
+        />
       </PanelRow>
     </Panel>
   );
