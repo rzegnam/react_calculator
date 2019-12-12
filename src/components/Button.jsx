@@ -1,16 +1,16 @@
-import React from 'react';
-import './button-style.css'
+import React from "react";
+import "./button-style.css";
 
-function Button(props) {
-    function handleChange() {
-        props.handleChange(props.name)
-    }  
-  
-    return (
+const Button = props => {
+  function handleChange() {
+    props.handleChange(props.name);
+  }
+
+  return (
     <div className="button">
-        <button onClick={handleChange}>{props.name}</button>
+      <button onClick={handleChange}>{props.name}</button>
     </div>
   );
-}
+};
 
 export default Button;
