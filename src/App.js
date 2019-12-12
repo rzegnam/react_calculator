@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CalculatorWindow from "./components/CalculatorWindow";
 import ButtonsPanel from "./components/ButtonsPanel";
 import "./App.css";
-import "./components/CalculatorWindow-styles.css";
 
 const App = () => {
   const [displayValue, setValue] = useState("123");

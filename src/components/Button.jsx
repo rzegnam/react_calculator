@@ -1,16 +1,18 @@
 import React from "react";
-import "./button-style.css";
+import styled from "@emotion/styled";
+
+const StyledButton = styled.button`
+  display: block;
+  width: 50%;
+  border: solid 1px;
+`;
 
 const Button = props => {
   function handleChange() {
     props.handleChange(props.name);
   }
 
-  return (
-    <div className="button">
-      <button onClick={handleChange}>{props.name}</button>
-    </div>
-  );
+  return <StyledButton onClick={handleChange}>{props.name}</StyledButton>;
 };
 
 export default Button;
