@@ -19,31 +19,79 @@ const ButtonsPanel = props => {
     <Panel>
       <PanelRow>
         <Button name="%" />
-        <Button name="AC" />
-        <Button name="<-" />
+        <Button
+          name="AC"
+          handleChange={props.handleChange}
+          buttonType="clear"
+        />
+        <Button name="TO DISCUSS" handleChange={props.handleChange} />
         <Button name="/" />
       </PanelRow>
       <PanelRow>
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
+        <Button
+          name="7"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="8"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="9"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
         <Button name="x" />
       </PanelRow>
       <PanelRow>
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
+        <Button
+          name="4"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="5"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="6"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
         <Button name="-" />
       </PanelRow>
       <PanelRow>
-        <Button name="1" />
-        <Button name="2" handleChange={props.handleChange} />
-        <Button name="3" />
-        <Button name="+" />
+        <Button
+          name="1"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="2"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button
+          name="3"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
+        <Button name="+" handleChange={props.handleChange} buttonType="sum" />
       </PanelRow>
       <PanelRow>
-        <Button name="+/-" />
-        <Button name="0" handleChange={props.handleChange} />
+        <Button
+          name="+/-"
+          handleChange={props.handleChange}
+          buttonType="revert-sign"
+        />
+        <Button
+          name="0"
+          handleChange={props.handleChange}
+          buttonType="numeric"
+        />
         <Button name="." />
         <Button name="=" />
       </PanelRow>

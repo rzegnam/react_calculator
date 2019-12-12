@@ -9,7 +9,7 @@ const StyledButton = styled.button`
 
 const Button = props => {
   function handleChange() {
-    props.handleChange(props.name);
+    props.handleChange(props.name, props.buttonType);
   }
 
   return <StyledButton onClick={handleChange}>{props.name}</StyledButton>;
