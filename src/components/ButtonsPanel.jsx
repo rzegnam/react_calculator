@@ -29,7 +29,7 @@ const ButtonsPanel = props => {
           buttonType="clear"
         />
         <Button
-          name="Calculator Info"
+          name="Info"
           handleChange={props.handleChange}
           buttonType="fun-button"
         />
