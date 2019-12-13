@@ -35,23 +35,25 @@ const App = () => {
     }
 
     if (buttonType === "result") {
-      setTotal(calculations[operation](total, displayValue));
-      setValue("");
-      setOperation("");
+      if (operation) {
+        setTotal(calculations[operation](total, displayValue));
+        setValue("");
+        setOperation("");
+      }
     }
 
     if (buttonType === "calculation") {
-      if (total && displayValue) {
-        setTotal(calculations[newValue](total, displayValue));
+      if (displayValue && operation && total) {
+        setTotal(calculations[operation](total, displayValue));
         setOperation(newValue);
-        setValue("");
-      } else if (!displayValue && !operation) {
+      } else if (total) {
         setOperation(newValue);
       } else {
-        setOperation(newValue);
         setTotal(displayValue);
-        setValue("");
+        setOperation(newValue);
       }
+
+      setValue("");
     }
   }
 
