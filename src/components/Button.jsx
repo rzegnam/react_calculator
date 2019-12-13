@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const StyledButton = styled.button`
   width: 50%;
   border: solid 1px;
-  font-size: 10vmin;
+  font-weight: bold;
   background: ${props =>
     props.buttonType === "calculation" || props.buttonType === "result"
       ? "orange"

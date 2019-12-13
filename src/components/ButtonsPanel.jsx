@@ -11,7 +11,6 @@ const PanelRow = styled.div`
   display: flex;
   flex-direction: row;
   height: 25%;
-  background: #f7f7ef;
 `;
 
 const ButtonsPanel = props => {
