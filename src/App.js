@@ -55,6 +55,28 @@ const App = () => {
 
       setValue("");
     }
+
+    if (buttonType === "percent" && displayValue) {
+      if (operation) {
+        setValue(
+          (
+            parseFloat(calculations[operation](total, displayValue)) * 0.01
+          ).toString(10)
+        );
+      } else {
+        setValue((parseFloat(displayValue) * 0.01).toString(10));
+      }
+    }
+
+    if (buttonType === "fun-button") {
+      window.open("https://en.wikipedia.org/wiki/Calculator");
+    }
+
+    if (buttonType === "dot") {
+      if (!displayValue.includes(".")) {
+        setValue(displayValue + newValue);
+      }
+    }
   }
 
   return (

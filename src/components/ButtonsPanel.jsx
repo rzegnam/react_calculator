@@ -18,13 +18,21 @@ const ButtonsPanel = props => {
   return (
     <Panel>
       <PanelRow>
-        <Button name="%" />
+        <Button
+          name="%"
+          handleChange={props.handleChange}
+          buttonType="percent"
+        />
         <Button
           name="AC"
           handleChange={props.handleChange}
           buttonType="clear"
         />
-        <Button name="TO DISCUSS" handleChange={props.handleChange} />
+        <Button
+          name="Calculator Info"
+          handleChange={props.handleChange}
+          buttonType="fun-button"
+        />
         <Button
           name="/"
           handleChange={props.handleChange}
@@ -108,7 +116,7 @@ const ButtonsPanel = props => {
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button name="." />
+        <Button name="." handleChange={props.handleChange} buttonType="dot" />
         <Button
           name="="
           handleChange={props.handleChange}
