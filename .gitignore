@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/.idea
 /.pnp
 .pnp.js
 
@@ -13,6 +12,8 @@
 /build
 
 # misc
+/src/playground.js
+/.idea
 .DS_Store
 .env.local
 .env.development.local
