@@ -27,10 +27,10 @@ const App = () => {
     }
 
     if (buttonType === "revert-sign") {
-      if (buttonType === "revert-sign") {
-        if (displayValue !== "") {
-          setValue((parseFloat(displayValue) * -1).toString(10));
-        }
+      if (displayValue !== "") {
+        setValue((parseFloat(displayValue) * -1).toString(10));
+      } else if (total !== "") {
+        setTotal((parseFloat(total) * -1).toString(10));
       }
     }
 
