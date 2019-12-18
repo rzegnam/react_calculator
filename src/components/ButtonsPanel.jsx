@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "./Button";
+import NumericButton from "./NumericButton";
+import ActionButton from "./ActionButton";
 import styled from "@emotion/styled";
 
 const Panel = styled.div`
@@ -17,106 +18,111 @@ const ButtonsPanel = props => {
   return (
     <Panel>
       <PanelRow>
-        <Button
+        <ActionButton
           name="%"
           handleChange={props.handleChange}
           buttonType="percent"
         />
-        <Button
+        <ActionButton
           name="AC"
           handleChange={props.handleChange}
           buttonType="clear"
         />
-        <Button
-          name="Info"
+        <ActionButton
+          name="+/-"
           handleChange={props.handleChange}
-          buttonType="fun-button"
+          buttonType="revert-sign"
         />
-        <Button
+        <ActionButton
           name="/"
           handleChange={props.handleChange}
           buttonType="calculation"
         />
       </PanelRow>
       <PanelRow>
-        <Button
+        <NumericButton
           name="7"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="8"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="9"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <ActionButton
           name="*"
           handleChange={props.handleChange}
           buttonType="calculation"
         />
       </PanelRow>
       <PanelRow>
-        <Button
+        <NumericButton
           name="4"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="5"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="6"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <ActionButton
           name="-"
           handleChange={props.handleChange}
           buttonType="calculation"
         />
       </PanelRow>
       <PanelRow>
-        <Button
+        <NumericButton
           name="1"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="2"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <NumericButton
           name="3"
           handleChange={props.handleChange}
           buttonType="numeric"
         />
-        <Button
+        <ActionButton
           name="+"
           handleChange={props.handleChange}
           buttonType="calculation"
         />
       </PanelRow>
       <PanelRow>
-        <Button
-          name="+/-"
-          handleChange={props.handleChange}
-          buttonType="revert-sign"
-        />
-        <Button
+        <NumericButton
           name="0"
           handleChange={props.handleChange}
           buttonType="numeric"
+          wide={"yes"}
         />
-        <Button name="." handleChange={props.handleChange} buttonType="dot" />
-        <Button
+        <NumericButton
+          name="."
+          handleChange={props.handleChange}
+          buttonType="dot"
+        />
+        <ActionButton
+          name="Info"
+          handleChange={props.handleChange}
+          buttonType="fun-button"
+        />
+        <ActionButton
           name="="
           handleChange={props.handleChange}
           buttonType="result"

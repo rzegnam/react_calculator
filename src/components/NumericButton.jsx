@@ -2,13 +2,10 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const StyledButton = styled.button`
-  width: 50%;
+  width: 25%;
   border: solid 1px;
   font-weight: bold;
-  background: ${props =>
-    props.buttonType === "calculation" || props.buttonType === "result"
-      ? "orange"
-      : "#f7f7ef"};
+  background: #f7f7ef;
 `;
 
 const Button = props => {
@@ -16,11 +13,7 @@ const Button = props => {
     props.handleChange(props.name, props.buttonType);
   }
 
-  return (
-    <StyledButton onClick={handleChange} buttonType={props.buttonType}>
-      {props.name}
-    </StyledButton>
-  );
+  return <StyledButton onClick={handleChange}>{props.name}</StyledButton>;
 };
 
 export default Button;
