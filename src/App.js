@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import CalculatorWindow from "./components/CalculatorWindow";
 import ButtonsPanel from "./components/ButtonsPanel";
-import "./App.css";
+import styled from "@emotion/styled";
+
+const CalcApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const calculations = {
   "+": (a, b) => (parseFloat(a) + parseFloat(b)).toString(10),
@@ -80,10 +86,10 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <CalcApp>
       <CalculatorWindow value={displayValue} total={total} />
       <ButtonsPanel value={displayValue} handleChange={handleChange} />
-    </div>
+    </CalcApp>
   );
 };
 

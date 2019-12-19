@@ -2,10 +2,9 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  color: black;
-  background: #f0efef;
-  height: 25vh;
+  background: #a6a1a1;
   text-align: right;
+  height: 25vh;
   font-size: 15vmin;
 `;
 

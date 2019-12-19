@@ -3,9 +3,8 @@ import styled from "@emotion/styled";
 
 const StyledButton = styled.button`
   width: 25%;
+  background-color: orange;
   border: solid 1px;
-  font-weight: bold;
-  background: orange;
 `;
 
 const Button = props => {

@@ -10,8 +10,7 @@ const Panel = styled.div`
 `;
 const PanelRow = styled.div`
   display: flex;
-  flex-direction: row;
-  height: 25%;
+  height: 100vh;
 `;
 
 const ButtonsPanel = props => {
@@ -116,11 +115,6 @@ const ButtonsPanel = props => {
           name="."
           handleChange={props.handleChange}
           buttonType="dot"
-        />
-        <ActionButton
-          name="Info"
-          handleChange={props.handleChange}
-          buttonType="fun-button"
         />
         <ActionButton
           name="="
