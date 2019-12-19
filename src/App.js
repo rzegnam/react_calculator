@@ -41,7 +41,7 @@ const App = () => {
     }
 
     if (buttonType === "result") {
-      if (operation) {
+      if (operation && displayValue) {
         setTotal(calculations[operation](total, displayValue));
         setValue("");
         setOperation("");
