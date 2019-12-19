@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CalculatorWindow from "./components/CalculatorWindow";
-import ButtonsPanel from "./components/ButtonsPanel";
+import CalculatorWindow from "./CalculatorWindow";
+import ButtonsPanel from "./ButtonsPanel";
 import styled from "@emotion/styled";
 
 const CalcApp = styled.div`
