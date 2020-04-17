@@ -21,6 +21,24 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "snapshotSerializers": [
+      "jest-emotion"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,6 +52,8 @@
     ]
   },
   "devDependencies": {
-    "jest-runner-eslint": "^0.7.6"
+    "jest-runner-eslint": "^0.7.6",
+    "jest-emotion": "^10.0.32",
+    "prettier": "^2.0.4"
   }
 }
