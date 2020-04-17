@@ -44,10 +44,10 @@
       "pre-commit": "lint-staged && npm run build"
     }
   },
-  "linst-staged": {
+  "lint-staged": {
     "**/*(js|json|css|html|md)": [
       "prettier",
-      "npm test --findRelatedTests"
+      "jest --findRelatedTests"
     ]
   },
   "browserslist": {
