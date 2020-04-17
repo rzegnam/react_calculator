@@ -37,20 +37,17 @@
     },
     "snapshotSerializers": [
       "jest-emotion"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-qr-reader)/)"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm test -- --watchAll=false"
     }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write",
-      "test"
+      "test --findRelatedTests"
     ]
   },
   "browserslist": {
