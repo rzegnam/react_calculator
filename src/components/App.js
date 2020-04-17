@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CalculatorWindow from "./CalculatorWindow";
 import ButtonsPanel from "./ButtonsPanel";
 import styled from "@emotion/styled";
@@ -14,7 +14,7 @@ class App extends React.Component {
   state = {
     nextValue: "",
     operation: "",
-    total: ""
+    total: "",
   };
 
   handleChange = (clickedButton, buttonType) => {
