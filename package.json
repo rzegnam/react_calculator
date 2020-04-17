@@ -39,6 +39,17 @@
       "jest-emotion"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run build"
+    }
+  },
+  "linst-staged": {
+    "**/*(js|json|css|html|md)": [
+      "prettier",
+      "npm test --findRelatedTests"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
