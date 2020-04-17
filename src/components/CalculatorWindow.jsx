@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const Container = styled.div`
   background: #a6a1a0;
   text-align: right;
-  height: 23vh;
+  height: 26vh;
   font-size: 15vmin;
 `;
 
