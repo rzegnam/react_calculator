@@ -8,7 +8,7 @@ test("renders", () => {
     .emotion-0 {
       background: #a6a1a0;
       text-align: right;
-      height: 25vh;
+      height: 22vh;
       font-size: 15vmin;
     }
 
